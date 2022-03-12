@@ -6,12 +6,12 @@ export default class ProductItem extends Component {
     let {image,name,price,shortDescription} = this.props.product;
     let {showInfo} = this.props
     return (
-      <div className="card">
-        <img className="img-fluid card-img-top" src={image} />
+      <div className="card mb-3 rounded shadow" style={{border: 'none'}}>
+      <img  height={350} src={image} alt={true} />
         <div className="card-body">
-          <h4 className="card-title text-primary">{name}</h4>
+          <h6 style={{fontSize : '23px'}} className="card-title text-primary">{name}</h6>
           <h5 className="card-title text-danger">{price} $</h5>
-          <p className="card-text">{shortDescription}</p>
+          <p style={{fontSize: '15px'}} className="card-text">{shortDescription}</p>
           <button onClick={()=>{showInfo(this.props.product)}} data-toggle="modal" data-target="#exampleModal" className="btn btn-success">Details</button>
         </div>
       </div>

@@ -18,9 +18,8 @@ export default class ShoesStore extends Component {
   render() {
     return (
       <div>
-          <h3  className='text-center p-3 text-light bg-dark'>BÀI TẬP PROPS (SHOES)</h3>
           <ProductList showInfo ={this.showInfo} Data = {Data}/>
-          <Modal shoe = {this.state.shoe}/>
+          <Modal shoe = {this.state.shoe}/>        
       </div>
     )
   }

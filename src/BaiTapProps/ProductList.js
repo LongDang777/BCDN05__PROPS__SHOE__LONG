@@ -9,7 +9,7 @@ export default class ProductList extends Component {
         return (
             Data.map((item, index) => {
                 return (
-                    <div className='col-4 mt-3' key={`shoes${index}`}>
+                    <div className='col-lg-4 col-md-6 mt-3' key={`shoes${index}`}>
                        <ProductItem  showInfo = {showInfo} product = {item}/>
                     </div>
                 )
